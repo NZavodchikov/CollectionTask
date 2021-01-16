@@ -20,64 +20,94 @@ partOne
 partTwo
 Сравнил время затраченное на основные операции для различных реализаций List, Map и Set для 100 000 элементов String, получил следующее:
 
-ArrayList and LinkedList
+Добавление в ArrayList и LinkedList 100 000 элементов
+
 Добавление в ArrayList:
-124829800
+332350300
+
 Добавление в LinkedList:
-50147800
-Поиск в ArrayList
-496700
+96914100
+Поиск по индексу в ArrayList и LinkedList:
+
+Поиск в ArrayList:
+44100
+
 Поиск в LinkedList
-881000
+324100
+
+Удаление по индексу в ArrayList и LinkedList:
+
 Удаление в ArrayList
-384000
+159300
+
 Удаление в LinkedList
-1740300
-HashSet and LinkedHashSet and TreeSet
+14121700
+
+Test for Set
+Добавление в HashSet, LinkedHashSet и TreeSet 100 000 элементов
+
 Добавление в HashSet
-93910100
+359886000
+
 Добавление в LinkedHashSet
-71966700
+212735500
+
 Добавление в TreeSet
-328154500
+335945400
+
+Проверка содержания элемента в HashSet, LinkedHashSet и TreeSet
+
+Проверка содержания в HashSet:
+21800
+
+Проверка содержания в LinkedHashSet:
+3000
+Проверка содержания в TreeSet:
+589900
+Удаление из HashSet, LinkedHashSet и TreeSet 100 000 элементов
+
 Удаление из HashSet:
-114300
+29400
+
 Удаление из LinkedHashSet:
-157500
+8500
+
 Удаление из TreeSet:
-238900
-HashMap and LinkedHashMap and TreeMap
+70400
+
+Test for Map
+Добавление в HashMap, LinkedHashMap и TreeMap 100 000 элементов
+
 Добавление в HashMap
-163444100
+79576000
+
 Добавление в LinkedHashMap
-121218100
+91877100
+
 Добавление в TreeMap
-90839100
+134830100
+
+Проверка содержания элемента по значению в HashMap, LinkedHashMap и TreeMap
+
+Содержание элемента по значению в HashMap:
+17264400
+
+Содержание элемента по значению в LinkedHashMap:
+13554900
+
+Содержание элемента по значению в TreeMap:
+24412200
+
+Удаление в HashMap, LinkedHashMap и TreeMap 100 000 элементов
+
 Удаление из HashMap:
-112000
+31500
+
 Удаление из LinkedHashMap:
-75700
+8300
+
 Удаление из TreeMap:
-190800
-
-Выводы:
-
-Для LinkedList и ArrayList:
-
-Добавление быстрее в LinkedList
-Взятие по индексу быстрее в ArrayList
-Удаление почему то быстрее получилось для ArrayList
-
-Для HashSet LinkedHashSet и TreeSet:
-
-Добавление быстрее всего в LinkedHashSet, медленнее в TreeSet
-Удаление быстрее из HashSet, медленее из TreeSet
-
-Для HashMap, LinkedHashMap  и TreeMap
-
-Добавление быстрее в TreeMap, медленнее в HashMap
-Удаление быстрее в LinkedHashMap, меленнее в TreeMap
+139000
 
 
-
-
+Process finished with exit code 0
