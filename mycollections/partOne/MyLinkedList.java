@@ -136,7 +136,7 @@ public class MyLinkedList<E> implements ILinkedList<E> {
 
     private class MyIterator<E> implements Iterator<E>{
 
-        private Node<E> node;
+        private Node<E> node = (Node<E>) first;
 
         @Override
         public E next() {
