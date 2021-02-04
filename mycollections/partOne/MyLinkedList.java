@@ -1,5 +1,6 @@
 package com.nzavod.mycollections.partOne;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -103,11 +104,17 @@ public class MyLinkedList<E> implements ILinkedList<E> {
     }
 
     @Override public E[] toArray() {
-        ArrayList<E> list = new ArrayList<>();
-        for (int i = 0; i < size; i++){
-            list.add(getByIndex(i).getElement());
+
+        if (size == 0){
+            return  null;
         }
-        return (E[])list.toArray();
+        E[] array = (E[]) Array.newInstance(first.getElement().getClass(), size);
+        Node<E> node = first;
+        for (int i = 0; node != null; i++ ){
+            array[i] = node.getElement();
+            node = node.getNextNode();
+        }
+        return array;
     }
 
     @Override public Iterator<E> iterator() {

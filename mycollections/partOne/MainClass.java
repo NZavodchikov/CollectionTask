@@ -69,9 +69,14 @@ public class MainClass {
             }
 
         }
+
         myLinkedList.clear();
         for (int i = 0; i < 10; i ++){
             myLinkedList.add(s + i);
+        }
+        String[]arr = myLinkedList.toArray();
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
         }
         for (String ss : myLinkedList){
             System.out.println(ss);
